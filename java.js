@@ -32,7 +32,106 @@
 var date = moment().format('LLLL')
 console.log(date)
 
+date,toString()
+console.log(date)
 // append current date to page
 
 $("#currentDay").append(date);
+
+// time var to create color coded time block
+var nineEL = document.getElementById("nine")
+var tenEL = document.getElementById("ten")
+var elevenEL = document.getElementById("eleven")
+var twelveEL = document.getElementById("twelve")
+var oneEL = document.getElementById("one")
+var twoEL = document.getElementById("two")
+var threeEL = document.getElementById("three")
+var fourEL = document.getElementById("four")
+var fiveEL = document.getElementById("five")
+var currentTime = parseInt(moment().format('H'));
+console.log(currentTime)
+
+// if statements to determine which color based on time
+if (currentTime > nineEL) {
+    $(".nine").css("background-color","grey")
+}  else if (currentTime === nineEl) {
+    $(".nine").css("background-color","red")
+}   if (currentTime < nineEL) {
+    $(".nine").css("background-color","green")
+}
+
+if (currentTime > tenEL) {
+    $(".ten").css("background-color","grey")
+}  else if (currentTime === tenEl) {
+    $(".ten").css("background-color","red")
+}   if (currentTime < tenEL) {
+    $(".ten").css("background-color","green")
+}
+
+if (currentTime > elevenEL) {
+    $(".eleven").css("background-color","grey")
+}   else if (currentTime === elevenEl) {
+    $(".eleven").css("background-color","red")
+}   if (currentTime < elevenEL) {
+    $(".eleven").css("background-color","green")
+}
+
+if (currentTime > twelveEL) {
+    $(".twelve").css("background-color","grey")
+}   else if (currentTime === twelveEl) {
+    $(".twelve").css("background-color","red")
+}   if (currentTime < twelveEL) {
+    $(".twelve").css("background-color","green")
+}
+
+if (currentTime > oneEL) {
+    $(".one").css("background-color","grey")
+}   else if (currentTime === oneEl) {
+    $(".one").css("background-color","red")
+}   if (currentTime < oneEL) {
+    $(".one").css("background-color","green")
+}
+if (currentTime > twoEL) {
+    $(".two").css("background-color","grey")
+}  else if (currentTime === twoEl) {
+    $(".two").css("background-color","red")
+}   if (currentTime < twoEL) {
+    $(".two").css("background-color","green")
+}
+
+if (currentTime > threeEL) {
+    $(".three").css("background-color","grey")
+}   else if (currentTime === threeEl) {
+    $(".three").css("background-color","red")
+}   if (currentTime < threeEL) {
+    $(".three").css("background-color","green")
+}
+
+if (currentTime > fourEL) {
+    $(".four").css("background-color","grey")
+}   else if (currentTime === fourEl) {
+    $(".four").css("background-color","red")
+}   if (currentTime < fourEL) {
+    $(".four").css("background-color","green")
+}
+
+if (currentTime > fiveEL) {
+    $(".five").css("background-color","grey")
+}   else if (currentTime === fiveEl) {
+    $(".five").css("background-color","red")
+}   if (currentTime < fiveEL) {
+    $(".five").css("background-color","green")
+}
+
+// save to local storage 
+
+var storage = document.querySelector(".form-control");
+var text = document.querySelector('.text');
+var saveButton = document.querySelector("saveBtn");
+
+saveButton.addEventListener("click", function(event){
+    event.preventDefault();
+
+    var storage
+})
 
