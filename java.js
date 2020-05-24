@@ -125,13 +125,20 @@ if (currentTime > fiveEL) {
 
 // save to local storage 
 
-var storage = document.querySelector(".form-control");
+var storage = document.querySelectorAll("form-control");
 var text = document.querySelector('.text');
-var saveButton = document.querySelector("saveBtn");
+var saveButton = document.querySelector(".saveBtn");
 
-saveButton.addEventListener("click", function(event){
-    event.preventDefault();
 
-    var storage
-})
+
+saveButton.addEventListener("click", function(event) {
+    //event.preventDefault();
+
+    var storage = document.querySelectorAll("form-control").value;
+
+    localStorage.setItem("", text);
+    console.log(storage)
+    
+});
+
 
